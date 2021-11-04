@@ -1,0 +1,7 @@
+{
+  "name": "dataEntryApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
