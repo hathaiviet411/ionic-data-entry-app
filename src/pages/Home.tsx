@@ -16,7 +16,6 @@ import {
   IonButton,
   IonToast,
 } from '@ionic/react';
-import { throws } from 'assert';
 import { useState } from 'react';
 import './Home.css';
 
@@ -74,24 +73,6 @@ const Home: React.FC = () => {
     } else if (Form.monthlyRentPrice.length === 0) {
       setHeaderMessage('Warning');
       setMessage('Monthly rent price is required !');
-      setColorMessage('danger');
-      setShowToast(true);
-
-      setTimeout(()=>{
-        setShowToast(false);
-      }, 3000)
-    } else if (Form.furnitureTypes.length === 0) {
-      setHeaderMessage('Warning');
-      setMessage('Furniture types is required !');
-      setColorMessage('danger');
-      setShowToast(true);
-
-      setTimeout(()=>{
-        setShowToast(false);
-      }, 3000)
-    } else if (Form.notes.length === 0) {
-      setHeaderMessage('Warning');
-      setMessage('Notes are required !');
       setColorMessage('danger');
       setShowToast(true);
 
