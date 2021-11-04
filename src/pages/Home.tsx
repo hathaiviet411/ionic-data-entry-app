@@ -21,17 +21,17 @@ import { useState } from 'react';
 import './Home.css';
 
 const Home: React.FC = () => {
-  let [propertyType, setPropertyType] = useState('');
-  let [bedrooms, setBedrooms] = useState('');
-  let [dateOfAddedProperty, setDateOfAddedProperty] = useState('');
-  let [monthlyRentPrice, setMonthlyRentPrice] = useState('');
-  let [furnitureTypes, setFurnitureTypes] = useState('');
-  let [notes, setNotes] = useState('');
-  let [nameReporter, setNameReporter] = useState('');
-  let [showToast, setShowToast] = useState(false);
-  let [headerMessage, setHeaderMessage] = useState('');
-  let [message, setMessage] = useState('');
-  let [colorMessage, setColorMessage] = useState('');
+  const [propertyType, setPropertyType] = useState('');
+  const [bedrooms, setBedrooms] = useState('');
+  const [dateOfAddedProperty, setDateOfAddedProperty] = useState('');
+  const [monthlyRentPrice, setMonthlyRentPrice] = useState('');
+  const [furnitureTypes, setFurnitureTypes] = useState('');
+  const [notes, setNotes] = useState('');
+  const [nameReporter, setNameReporter] = useState('');
+  const [showToast, setShowToast] = useState(false);
+  const [headerMessage, setHeaderMessage] = useState('');
+  const [message, setMessage] = useState('');
+  const [colorMessage, setColorMessage] = useState('');
 
   const handleSubmit = () => {
     const Form = {
@@ -229,7 +229,7 @@ const Home: React.FC = () => {
             🧼️ Reset
           </IonButton> */}
 
-          {/* oast */}
+          {/* Toast */}
           <IonToast isOpen={showToast} header={headerMessage} message={message} color={colorMessage} position="top"></IonToast>
         </div>
       </IonContent>
