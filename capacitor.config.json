@@ -1,6 +1,6 @@
 {
 	"appId": "io.ionic.starter",
-	"appName": "dataEntryApp",
+	"appName": "form-validate",
 	"webDir": "build",
 	"bundledWebRuntime": false
 }
