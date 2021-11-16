@@ -79,9 +79,9 @@ const Home: React.FC = () => {
       setTimeout(()=>{
         setShowToast(false);
       }, 3000)
-    } else if (Form.nameReporter.length === 0) {
+    } else if (Form.furnitureTypes.length === 0) {
       setHeaderMessage('Warning');
-      setMessage(`Reporter's name is required !`);
+      setMessage(`Furniture type name is required !`);
       setColorMessage('danger');
       setShowToast(true);
 
@@ -193,7 +193,7 @@ const Home: React.FC = () => {
 
           {/* Name of The Reporter */}
           <IonItem>
-            <IonLabel position="stacked">🔖Name of the reporter</IonLabel>
+            <IonLabel position="stacked">🔖 Name of The Reporter</IonLabel>
             <IonInput 
               onIonChange={event => setNameReporter(event.detail.value!)} 
               placeholder="Please Enter Name of The Reporter"
