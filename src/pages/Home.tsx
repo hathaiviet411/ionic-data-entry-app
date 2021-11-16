@@ -88,6 +88,15 @@ const Home: React.FC = () => {
       setTimeout(()=>{
         setShowToast(false);
       }, 3000)
+    } else if (Form.nameReporter.length === 0) {
+      setHeaderMessage('Warning');
+      setMessage(`Reporter's name is required !`);
+      setColorMessage('danger');
+      setShowToast(true);
+
+      setTimeout(()=>{
+        setShowToast(false);
+      }, 3000)
     } else {
       setHeaderMessage('Success');
       setMessage('Form Submitted Successfully.');
